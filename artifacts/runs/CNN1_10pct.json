@@ -1,0 +1,77 @@
+{
+  "id": "CNN1_10pct",
+  "config": {
+    "id": "CNN1",
+    "model": "cnn",
+    "width": 16,
+    "dropout": 0.15,
+    "lr": 0.003,
+    "wd": 0.0001,
+    "batch": 256,
+    "epochs": 3,
+    "mean": [
+      0.49130916360294113,
+      0.4819134069478486,
+      0.44632411279616013
+    ],
+    "std": [
+      0.24699397466451595,
+      0.2434673771793024,
+      0.26151827667932587
+    ],
+    "threads": 12,
+    "use_block4_cache": false
+  },
+  "fraction": 0.1,
+  "n_train": 4500,
+  "n_validation": 5000,
+  "params_total": 72954,
+  "params_trainable": 72954,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.0447814248402914,
+      "train_accuracy": 0.23622222222222222,
+      "val_loss": 2.2049732055664064,
+      "val_accuracy": 0.1518,
+      "val_precision_macro": 0.2974753823360902,
+      "val_recall_macro": 0.1518,
+      "val_f1_macro": 0.06911961544883646,
+      "train_seconds": 1.4145095000276342,
+      "epoch_seconds": 1.849026000010781,
+      "cumulative_seconds": 1.849026000010781
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.816715316772461,
+      "train_accuracy": 0.3188888888888889,
+      "val_loss": 1.7363089141845702,
+      "val_accuracy": 0.3708,
+      "val_precision_macro": 0.3944281310537026,
+      "val_recall_macro": 0.37079999999999996,
+      "val_f1_macro": 0.3622836483298865,
+      "train_seconds": 1.3218326999922283,
+      "epoch_seconds": 1.7476131999865174,
+      "cumulative_seconds": 3.5966391999972984
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.692316994243198,
+      "train_accuracy": 0.36733333333333335,
+      "val_loss": 1.6870987884521484,
+      "val_accuracy": 0.353,
+      "val_precision_macro": 0.445756664028197,
+      "val_recall_macro": 0.35300000000000004,
+      "val_f1_macro": 0.32329275294133064,
+      "train_seconds": 1.3098978000343777,
+      "epoch_seconds": 1.7453832000028342,
+      "cumulative_seconds": 5.342022400000133
+    }
+  ],
+  "best_epoch": 2,
+  "best_val_f1": 0.3622836483298865,
+  "total_seconds": 5.354076599993277,
+  "cpu_peak_rss_mb": 1181.5234375,
+  "gpu_peak_mb": null,
+  "checkpoint": "artifacts\\checkpoints\\CNN1_10pct.pt"
+}

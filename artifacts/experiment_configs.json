@@ -1,0 +1,95 @@
+[
+  {
+    "id": "CNN1",
+    "model": "cnn",
+    "width": 16,
+    "dropout": 0.15,
+    "lr": 0.003,
+    "wd": 0.0001,
+    "batch": 256,
+    "epochs": 3
+  },
+  {
+    "id": "CNN2",
+    "model": "cnn",
+    "width": 24,
+    "dropout": 0.25,
+    "lr": 0.003,
+    "wd": 0.0001,
+    "batch": 256,
+    "epochs": 3
+  },
+  {
+    "id": "CNN3",
+    "model": "cnn",
+    "width": 24,
+    "dropout": 0.35,
+    "lr": 0.001,
+    "wd": 0.0005,
+    "batch": 256,
+    "epochs": 3
+  },
+  {
+    "id": "FE1",
+    "model": "fe",
+    "blocks": "ninguno",
+    "dropout": 0.5,
+    "lr": 0.01,
+    "wd": 0.0001,
+    "batch": 512,
+    "epochs": 2
+  },
+  {
+    "id": "FE2",
+    "model": "fe",
+    "blocks": "ninguno",
+    "dropout": 0.3,
+    "lr": 0.02,
+    "wd": 0.0001,
+    "batch": 512,
+    "epochs": 2
+  },
+  {
+    "id": "FE3",
+    "model": "fe",
+    "blocks": "ninguno",
+    "dropout": 0.5,
+    "lr": 0.005,
+    "wd": 0.0005,
+    "batch": 512,
+    "epochs": 2
+  },
+  {
+    "id": "FT1",
+    "model": "ft",
+    "blocks": "5",
+    "dropout": 0.5,
+    "lr": 0.01,
+    "backbone_lr": 0.0001,
+    "wd": 0.0001,
+    "batch": 512,
+    "epochs": 2
+  },
+  {
+    "id": "FT2",
+    "model": "ft",
+    "blocks": "4+5",
+    "dropout": 0.5,
+    "lr": 0.01,
+    "backbone_lr": 0.0001,
+    "wd": 0.0001,
+    "batch": 1024,
+    "epochs": 2
+  },
+  {
+    "id": "FT3",
+    "model": "ft",
+    "blocks": "5",
+    "dropout": 0.3,
+    "lr": 0.02,
+    "backbone_lr": 0.0005,
+    "wd": 0.0001,
+    "batch": 1024,
+    "epochs": 2
+  }
+]

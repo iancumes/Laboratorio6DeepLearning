@@ -1,0 +1,184 @@
+{
+  "id": "CNN1",
+  "model": "cnn",
+  "fraction": 1.0,
+  "test": {
+    "accuracy": 0.6239,
+    "precision_macro": 0.6605941304946219,
+    "recall_macro": 0.6239000000000001,
+    "f1_macro": 0.6284043968735583,
+    "loss": 1.0568324119567871
+  },
+  "confusion_matrix": [
+    [
+      481,
+      29,
+      148,
+      57,
+      6,
+      14,
+      15,
+      11,
+      217,
+      22
+    ],
+    [
+      12,
+      805,
+      1,
+      55,
+      0,
+      11,
+      20,
+      10,
+      30,
+      56
+    ],
+    [
+      28,
+      0,
+      453,
+      156,
+      77,
+      103,
+      141,
+      21,
+      20,
+      1
+    ],
+    [
+      5,
+      1,
+      60,
+      571,
+      10,
+      212,
+      115,
+      10,
+      10,
+      6
+    ],
+    [
+      8,
+      2,
+      93,
+      132,
+      427,
+      51,
+      156,
+      115,
+      15,
+      1
+    ],
+    [
+      0,
+      1,
+      59,
+      322,
+      18,
+      522,
+      45,
+      25,
+      5,
+      3
+    ],
+    [
+      4,
+      0,
+      42,
+      111,
+      24,
+      7,
+      804,
+      3,
+      5,
+      0
+    ],
+    [
+      7,
+      1,
+      47,
+      98,
+      40,
+      145,
+      19,
+      634,
+      3,
+      6
+    ],
+    [
+      28,
+      23,
+      22,
+      75,
+      2,
+      6,
+      10,
+      2,
+      822,
+      10
+    ],
+    [
+      23,
+      82,
+      3,
+      87,
+      0,
+      10,
+      21,
+      13,
+      41,
+      720
+    ]
+  ],
+  "n_test": 10000,
+  "profile": {
+    "macs_inference": 9880192,
+    "flops_inference": 19760384,
+    "macs_trainable": 9880192,
+    "latency_ms": 0.5070433331032594,
+    "latency_std_ms": 0.06753066600120125,
+    "latency_device": "cpu",
+    "latency_batch": 1,
+    "latency_repetitions": 30,
+    "layers": [
+      {
+        "layer": "features.0",
+        "macs": 442368,
+        "trainable": true
+      },
+      {
+        "layer": "features.3",
+        "macs": 2359296,
+        "trainable": true
+      },
+      {
+        "layer": "features.8",
+        "macs": 1179648,
+        "trainable": true
+      },
+      {
+        "layer": "features.11",
+        "macs": 2359296,
+        "trainable": true
+      },
+      {
+        "layer": "features.16",
+        "macs": 1179648,
+        "trainable": true
+      },
+      {
+        "layer": "features.19",
+        "macs": 2359296,
+        "trainable": true
+      },
+      {
+        "layer": "classifier.2",
+        "macs": 640,
+        "trainable": true
+      }
+    ],
+    "thop_macs_including_bn": 10109568,
+    "estimated_flops_train_per_image": 59281152
+  }
+}

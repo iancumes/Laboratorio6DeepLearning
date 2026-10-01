@@ -1,0 +1,65 @@
+{
+  "id": "FT3",
+  "config": {
+    "id": "FT3",
+    "model": "ft",
+    "blocks": "5",
+    "dropout": 0.3,
+    "lr": 0.02,
+    "backbone_lr": 0.0005,
+    "wd": 0.0001,
+    "batch": 1024,
+    "epochs": 2,
+    "threads": 12,
+    "use_block4_cache": true,
+    "mean": [
+      0.49130916360294113,
+      0.4819134069478486,
+      0.44632411279616013
+    ],
+    "std": [
+      0.24699397466451595,
+      0.2434673771793024,
+      0.26151827667932587
+    ]
+  },
+  "fraction": 1.0,
+  "n_train": 45000,
+  "n_validation": 5000,
+  "params_total": 134301514,
+  "params_trainable": 126666250,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.2272797060012817,
+      "train_accuracy": 0.581,
+      "val_loss": 0.955331689453125,
+      "val_accuracy": 0.6706,
+      "val_precision_macro": 0.6698186314869599,
+      "val_recall_macro": 0.6706000000000001,
+      "val_f1_macro": 0.6678056007865404,
+      "train_seconds": 104.80789759999607,
+      "epoch_seconds": 106.5307768000057,
+      "cumulative_seconds": 106.5307768000057
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.8979530830383301,
+      "train_accuracy": 0.6856888888888889,
+      "val_loss": 0.8711726806640625,
+      "val_accuracy": 0.6962,
+      "val_precision_macro": 0.6966513317871479,
+      "val_recall_macro": 0.6961999999999999,
+      "val_f1_macro": 0.6946801757822695,
+      "train_seconds": 99.45721349999076,
+      "epoch_seconds": 101.09599880001042,
+      "cumulative_seconds": 207.62677560001612
+    }
+  ],
+  "best_epoch": 2,
+  "best_val_f1": 0.6946801757822695,
+  "total_seconds": 208.90295499999775,
+  "cpu_peak_rss_mb": 2724.31640625,
+  "gpu_peak_mb": null,
+  "checkpoint": "artifacts\\checkpoints\\FT3.pt"
+}

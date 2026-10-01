@@ -1,0 +1,65 @@
+{
+  "id": "FT3_10pct",
+  "config": {
+    "id": "FT3",
+    "model": "ft",
+    "blocks": "5",
+    "dropout": 0.3,
+    "lr": 0.02,
+    "backbone_lr": 0.0005,
+    "wd": 0.0001,
+    "batch": 1024,
+    "epochs": 2,
+    "threads": 12,
+    "use_block4_cache": true,
+    "mean": [
+      0.49130916360294113,
+      0.4819134069478486,
+      0.44632411279616013
+    ],
+    "std": [
+      0.24699397466451595,
+      0.2434673771793024,
+      0.26151827667932587
+    ]
+  },
+  "fraction": 0.1,
+  "n_train": 4500,
+  "n_validation": 5000,
+  "params_total": 134301514,
+  "params_trainable": 126666250,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.9084873161315918,
+      "train_accuracy": 0.3468888888888889,
+      "val_loss": 1.3603276123046875,
+      "val_accuracy": 0.5592,
+      "val_precision_macro": 0.5825214328019533,
+      "val_recall_macro": 0.5592,
+      "val_f1_macro": 0.5629360273650643,
+      "train_seconds": 10.351546199992299,
+      "epoch_seconds": 11.899664100026712,
+      "cumulative_seconds": 11.899664100026712
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.2848349285125733,
+      "train_accuracy": 0.5975555555555555,
+      "val_loss": 1.258431298828125,
+      "val_accuracy": 0.5892,
+      "val_precision_macro": 0.6074392968091702,
+      "val_recall_macro": 0.5892,
+      "val_f1_macro": 0.5895655818117337,
+      "train_seconds": 10.123039500031155,
+      "epoch_seconds": 11.58793700003298,
+      "cumulative_seconds": 23.487601100059692
+    }
+  ],
+  "best_epoch": 2,
+  "best_val_f1": 0.5895655818117337,
+  "total_seconds": 24.78733070002636,
+  "cpu_peak_rss_mb": 2842.2890625,
+  "gpu_peak_mb": null,
+  "checkpoint": "artifacts\\checkpoints\\FT3_10pct.pt"
+}

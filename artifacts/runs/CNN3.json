@@ -1,0 +1,75 @@
+{
+  "id": "CNN3",
+  "config": {
+    "id": "CNN3",
+    "model": "cnn",
+    "width": 24,
+    "dropout": 0.35,
+    "lr": 0.001,
+    "wd": 0.0005,
+    "batch": 256,
+    "epochs": 3,
+    "mean": [
+      0.49130916360294113,
+      0.4819134069478486,
+      0.44632411279616013
+    ],
+    "std": [
+      0.24699397466451595,
+      0.2434673771793024,
+      0.26151827667932587
+    ]
+  },
+  "fraction": 1.0,
+  "n_train": 45000,
+  "n_validation": 5000,
+  "params_total": 162994,
+  "params_trainable": 162994,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.8113034438451132,
+      "train_accuracy": 0.32408888888888887,
+      "val_loss": 1.4480605163574218,
+      "val_accuracy": 0.4786,
+      "val_precision_macro": 0.4928961097505625,
+      "val_recall_macro": 0.4786,
+      "val_f1_macro": 0.4647733181702242,
+      "train_seconds": 63.158794999995735,
+      "epoch_seconds": 65.2539950000355,
+      "cumulative_seconds": 65.2539950000355
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.5103322473526002,
+      "train_accuracy": 0.4474666666666667,
+      "val_loss": 1.299004638671875,
+      "val_accuracy": 0.536,
+      "val_precision_macro": 0.545656507563223,
+      "val_recall_macro": 0.5359999999999999,
+      "val_f1_macro": 0.5297883176361766,
+      "train_seconds": 63.333452599996235,
+      "epoch_seconds": 65.46373839996522,
+      "cumulative_seconds": 130.71773340000072
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.374144981320699,
+      "train_accuracy": 0.5009111111111111,
+      "val_loss": 1.162217724609375,
+      "val_accuracy": 0.5706,
+      "val_precision_macro": 0.584403072459811,
+      "val_recall_macro": 0.5706,
+      "val_f1_macro": 0.5640013735397329,
+      "train_seconds": 63.009800100000575,
+      "epoch_seconds": 65.18780519999564,
+      "cumulative_seconds": 195.90553859999636
+    }
+  ],
+  "best_epoch": 3,
+  "best_val_f1": 0.5640013735397329,
+  "total_seconds": 195.93801609997172,
+  "cpu_peak_rss_mb": 833.37109375,
+  "gpu_peak_mb": null,
+  "checkpoint": "artifacts\\checkpoints\\CNN3.pt"
+}

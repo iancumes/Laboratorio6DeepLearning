@@ -1,0 +1,62 @@
+{
+  "id": "FE1",
+  "config": {
+    "id": "FE1",
+    "model": "fe",
+    "blocks": "ninguno",
+    "dropout": 0.5,
+    "lr": 0.01,
+    "wd": 0.0001,
+    "batch": 512,
+    "epochs": 2,
+    "mean": [
+      0.49130916360294113,
+      0.4819134069478486,
+      0.44632411279616013
+    ],
+    "std": [
+      0.24699397466451595,
+      0.2434673771793024,
+      0.26151827667932587
+    ]
+  },
+  "fraction": 1.0,
+  "n_train": 45000,
+  "n_validation": 5000,
+  "params_total": 134301514,
+  "params_trainable": 119586826,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.3004013406329684,
+      "train_accuracy": 0.5651111111111111,
+      "val_loss": 1.000597265625,
+      "val_accuracy": 0.649,
+      "val_precision_macro": 0.6471806596146096,
+      "val_recall_macro": 0.6489999999999999,
+      "val_f1_macro": 0.6460692390774817,
+      "train_seconds": 41.61157240002649,
+      "epoch_seconds": 42.63876480003819,
+      "cumulative_seconds": 42.63876480003819
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.0422788800557454,
+      "train_accuracy": 0.6393333333333333,
+      "val_loss": 0.9526051635742188,
+      "val_accuracy": 0.6654,
+      "val_precision_macro": 0.6638632874056861,
+      "val_recall_macro": 0.6654000000000001,
+      "val_f1_macro": 0.6606590315223061,
+      "train_seconds": 42.57578620000277,
+      "epoch_seconds": 43.59831899998244,
+      "cumulative_seconds": 86.23708380002063
+    }
+  ],
+  "best_epoch": 2,
+  "best_val_f1": 0.6606590315223061,
+  "total_seconds": 92.70869110000785,
+  "cpu_peak_rss_mb": 2690.80859375,
+  "gpu_peak_mb": null,
+  "checkpoint": "artifacts\\checkpoints\\FE1.pt"
+}

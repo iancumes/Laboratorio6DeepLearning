@@ -1,0 +1,229 @@
+{
+  "id": "FE2",
+  "model": "fe",
+  "fraction": 1.0,
+  "test": {
+    "accuracy": 0.6732,
+    "precision_macro": 0.6737571195051177,
+    "recall_macro": 0.6731999999999999,
+    "f1_macro": 0.6727248006552089,
+    "loss": 0.9462647186279297
+  },
+  "confusion_matrix": [
+    [
+      683,
+      19,
+      57,
+      21,
+      30,
+      8,
+      13,
+      30,
+      108,
+      31
+    ],
+    [
+      21,
+      737,
+      2,
+      31,
+      2,
+      7,
+      10,
+      5,
+      40,
+      145
+    ],
+    [
+      49,
+      9,
+      577,
+      54,
+      104,
+      34,
+      127,
+      28,
+      14,
+      4
+    ],
+    [
+      14,
+      20,
+      55,
+      531,
+      39,
+      164,
+      107,
+      44,
+      10,
+      16
+    ],
+    [
+      13,
+      2,
+      82,
+      43,
+      612,
+      46,
+      104,
+      84,
+      11,
+      3
+    ],
+    [
+      9,
+      12,
+      56,
+      159,
+      34,
+      636,
+      34,
+      46,
+      5,
+      9
+    ],
+    [
+      13,
+      3,
+      62,
+      59,
+      55,
+      36,
+      751,
+      12,
+      6,
+      3
+    ],
+    [
+      19,
+      7,
+      34,
+      45,
+      104,
+      69,
+      16,
+      672,
+      12,
+      22
+    ],
+    [
+      62,
+      47,
+      14,
+      20,
+      19,
+      0,
+      3,
+      5,
+      773,
+      57
+    ],
+    [
+      34,
+      119,
+      2,
+      17,
+      3,
+      6,
+      3,
+      11,
+      45,
+      760
+    ]
+  ],
+  "n_test": 10000,
+  "profile": {
+    "macs_inference": 432775168,
+    "flops_inference": 865550336,
+    "macs_trainable": 119578624,
+    "latency_ms": 16.747873336620007,
+    "latency_std_ms": 0.6348669422187672,
+    "latency_device": "cpu",
+    "latency_batch": 1,
+    "latency_repetitions": 30,
+    "layers": [
+      {
+        "layer": "features.0",
+        "macs": 1769472,
+        "trainable": false
+      },
+      {
+        "layer": "features.2",
+        "macs": 37748736,
+        "trainable": false
+      },
+      {
+        "layer": "features.5",
+        "macs": 18874368,
+        "trainable": false
+      },
+      {
+        "layer": "features.7",
+        "macs": 37748736,
+        "trainable": false
+      },
+      {
+        "layer": "features.10",
+        "macs": 18874368,
+        "trainable": false
+      },
+      {
+        "layer": "features.12",
+        "macs": 37748736,
+        "trainable": false
+      },
+      {
+        "layer": "features.14",
+        "macs": 37748736,
+        "trainable": false
+      },
+      {
+        "layer": "features.17",
+        "macs": 18874368,
+        "trainable": false
+      },
+      {
+        "layer": "features.19",
+        "macs": 37748736,
+        "trainable": false
+      },
+      {
+        "layer": "features.21",
+        "macs": 37748736,
+        "trainable": false
+      },
+      {
+        "layer": "features.24",
+        "macs": 9437184,
+        "trainable": false
+      },
+      {
+        "layer": "features.26",
+        "macs": 9437184,
+        "trainable": false
+      },
+      {
+        "layer": "features.28",
+        "macs": 9437184,
+        "trainable": false
+      },
+      {
+        "layer": "classifier.0",
+        "macs": 102760448,
+        "trainable": true
+      },
+      {
+        "layer": "classifier.3",
+        "macs": 16777216,
+        "trainable": true
+      },
+      {
+        "layer": "classifier.6",
+        "macs": 40960,
+        "trainable": true
+      }
+    ],
+    "thop_macs_including_bn": 432775168,
+    "estimated_flops_train_per_image": 1343864832
+  }
+}

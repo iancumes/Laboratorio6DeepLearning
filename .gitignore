@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+data/
+artifacts/cache_*.npy
+artifacts/vgg16-*.pth
+artifacts/checkpoints/
+tmp/
+*.log

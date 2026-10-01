@@ -1,0 +1,16 @@
+{
+  "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "cpu_model": "Intel Core i9-13900H",
+  "logical_cpus": 20,
+  "threads": 12,
+  "ram_gb": 15.64,
+  "device": "cpu",
+  "gpu": null,
+  "graphics": "Intel Iris Xe (no CUDA)",
+  "torch": "2.14.1+cpu",
+  "torchvision": "0.29.1+cpu",
+  "python": "3.11.9",
+  "seed": 23236,
+  "vgg_resolution": 32,
+  "created_utc": "2026-10-01T05:40:18Z"
+}

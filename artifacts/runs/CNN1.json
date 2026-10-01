@@ -1,0 +1,75 @@
+{
+  "id": "CNN1",
+  "config": {
+    "id": "CNN1",
+    "model": "cnn",
+    "width": 16,
+    "dropout": 0.15,
+    "lr": 0.003,
+    "wd": 0.0001,
+    "batch": 256,
+    "epochs": 3,
+    "mean": [
+      0.49130916360294113,
+      0.4819134069478486,
+      0.44632411279616013
+    ],
+    "std": [
+      0.24699397466451595,
+      0.2434673771793024,
+      0.26151827667932587
+    ]
+  },
+  "fraction": 1.0,
+  "n_train": 45000,
+  "n_validation": 5000,
+  "params_total": 72954,
+  "params_trainable": 72954,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.6374016114764742,
+      "train_accuracy": 0.39293333333333336,
+      "val_loss": 1.290330923461914,
+      "val_accuracy": 0.525,
+      "val_precision_macro": 0.5223560148268372,
+      "val_recall_macro": 0.525,
+      "val_f1_macro": 0.5135002113816018,
+      "train_seconds": 18.584960900014266,
+      "epoch_seconds": 19.22394619998522,
+      "cumulative_seconds": 19.22394619998522
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.3177440293629965,
+      "train_accuracy": 0.5216,
+      "val_loss": 1.1008497772216796,
+      "val_accuracy": 0.606,
+      "val_precision_macro": 0.6091305799994826,
+      "val_recall_macro": 0.606,
+      "val_f1_macro": 0.6043136927925558,
+      "train_seconds": 19.348290199995972,
+      "epoch_seconds": 19.950013199995738,
+      "cumulative_seconds": 39.17395939998096
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.189454880947537,
+      "train_accuracy": 0.5734888888888889,
+      "val_loss": 1.0716214630126952,
+      "val_accuracy": 0.6282,
+      "val_precision_macro": 0.6649363227582945,
+      "val_recall_macro": 0.6282,
+      "val_f1_macro": 0.6319296101959313,
+      "train_seconds": 18.309485299978405,
+      "epoch_seconds": 18.88477799994871,
+      "cumulative_seconds": 58.05873739992967
+    }
+  ],
+  "best_epoch": 3,
+  "best_val_f1": 0.6319296101959313,
+  "total_seconds": 58.083474300045054,
+  "cpu_peak_rss_mb": 799.90625,
+  "gpu_peak_mb": null,
+  "checkpoint": "artifacts\\checkpoints\\CNN1.pt"
+}

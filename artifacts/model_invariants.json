@@ -1,0 +1,8 @@
+{
+  "spatial_linear_forward_backward_sgd_equivalent": true,
+  "steps": 3,
+  "dtype": "float64",
+  "maximum_forward_difference": 8.881784197001252e-15,
+  "tolerance": 1e-10,
+  "includes_momentum_and_weight_decay": true
+}
